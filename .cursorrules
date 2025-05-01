@@ -1,0 +1,47 @@
+# Project-wide rules
+---
+description: Global coding standards for the Astro project
+globs: ["*"]
+rules:
+  - Each file must start with its path as a single-line comment
+  - Comments should explain why, not what the code does
+  - Follow DRY (Don't Repeat Yourself) principles
+  - Optimize for performance and reusability
+  - Maintain clear separation of concerns
+---
+
+# Astro Component Rules
+---
+description: Standards for Astro components and styling
+globs: ["*.astro"]
+rules:
+  - Use TailwindCSS utility classes for all styling
+  - Avoid inline styles
+  - Keep components modular and reusable
+  - Group related Tailwind utilities together
+  - Extract common utility patterns into reusable components
+---
+
+# TypeScript Rules
+---
+description: TypeScript configuration and type safety
+globs: ["*.tsx"]
+rules:
+  - Enable strict TypeScript mode
+  - Explicitly declare all types
+  - Avoid using 'any' type
+  - Use proper type annotations for props and state
+  - Implement proper error handling with type checking
+---
+
+# Component Structure
+---
+description: Component organization and best practices
+globs: ["*.astro", "*.tsx"]
+rules:
+  - Components should have a single responsibility
+  - Props should be properly typed
+  - Maintain consistent naming conventions
+  - Keep components focused and concise
+  - Document component interfaces and usage
+---
